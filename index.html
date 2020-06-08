@@ -5,7 +5,6 @@
 	<meta charset="utf-8">
 	<!-- Compiled w/ P5LIVE, http://github.com/ffd8/p5live -->
 	<script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/addons/p5.sound.min.js"></script>
 	<style type="text/css">
 		body{
 			margin:0;
@@ -53,12 +52,12 @@ var easycam,
 function setup() {
 	createCanvas(windowWidth, windowHeight, WEBGL);
 	easycam = createEasyCam();
-	img0 = loadImage('includes/data/riba/0.png');
-	img1 = loadImage('includes/data/riba/1.png');
-	img2 = loadImage('includes/data/riba/2.png');
-	img3 = loadImage('includes/data/riba/3.png');
-	img4 = loadImage('includes/data/riba/4.png');
-	img5 = loadImage('includes/data/riba/5.png');
+	img0 = loadImage('./img/0.png');
+	img1 = loadImage('./img/1.png');
+	img2 = loadImage('./img/2.png');
+	img3 = loadImage('./img/3.png');
+	img4 = loadImage('./img/4.png');
+	img5 = loadImage('./img/5.png');
 
 	document.oncontextmenu = () => false;
 	easycam.setState(state, 1000); // animate to state in 1 second
